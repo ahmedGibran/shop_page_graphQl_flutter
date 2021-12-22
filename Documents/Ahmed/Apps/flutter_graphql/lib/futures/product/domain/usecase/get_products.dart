@@ -3,16 +3,11 @@ import 'package:flutter_graphql/core/core.dart';
 import 'package:flutter_graphql/futures/product/domain/domain.dart';
 
 class GetProducts{
- final ProductRepository? productRepository;
-  GetProducts({this.productRepository});
+ final ProductRepository productRepository;
+  GetProducts({required this.productRepository});
 
-  Future<Either<Failure,List<Product>>> getProduct()async{
-   List<Product>? products  = await productRepository!.getProducts();
-   if(products!.isNotEmpty) {
-     return  Right(products);
-   } else{
-    return Left(Failure());
-   }
+  Future<Either<Failure,List<Product>>?> getProduct()async{
+  return productRepository.getProducts();
 
   }
 }

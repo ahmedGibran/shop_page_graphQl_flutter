@@ -1,0 +1,131 @@
+{
+    "data": {
+      "products": {
+        "edges": [
+          {
+            "node": {
+              "media": [
+                {
+                  "url": "https://demo.saleor.io/media/products/saleordemoproduct_fd_juice_06.png"
+                }
+              ],
+              "id": "UHJvZHVjdDo3Mg==",
+              "name": "Apple Juice",
+              "description": "{\"blocks\": [{\"data\": {\"text\": \"Fell straight from the tree, on to Newton\\u2019s head, then into the bottle. The autumn taste of English apples. Brought to you by gravity.\"}, \"type\": \"paragraph\"}]}"
+            }
+          },
+          {
+            "node": {
+              "media": [
+                {
+                  "url": "https://demo.saleor.io/media/products/saleordemoproduct_fd_juice_01.png"
+                }
+              ],
+              "id": "UHJvZHVjdDo3NA==",
+              "name": "Banana Juice",
+              "description": "{\"blocks\": [{\"data\": {\"text\": \"Build your protein the natural way, with exotic banana juice made from ripe fruit and packed with all the goodness of the tropical sun.\"}, \"type\": \"paragraph\"}]}"
+            }
+          },
+          {
+            "node": {
+              "media": [
+                {
+                  "url": "https://demo.saleor.io/media/products/saleordemoproduct_fd_juice_02.png"
+                }
+              ],
+              "id": "UHJvZHVjdDo3OQ==",
+              "name": "Bean Juice",
+              "description": "{\"blocks\": [{\"data\": {\"text\": \"Bean there, drunk that! The energy drink for the health-conscious. Brand new bean juice; from allotment to bottle in under 8 hours.\"}, \"type\": \"paragraph\"}]}"
+            }
+          },
+          {
+            "node": {
+              "media": [
+                {
+                  "url": "https://demo.saleor.io/media/products/saleordemoproduct_cl_bogo01_1.png"
+                }
+              ],
+              "id": "UHJvZHVjdDoxMTU=",
+              "name": "Black Hoodie",
+              "description": "{\"blocks\": [{\"data\": {\"text\": \"Special offer. Buy a hood and get a free jet black sweater attached. Perfect for when you are up to no good.\"}, \"type\": \"paragraph\"}]}"
+            }
+          },
+          {
+            "node": {
+              "media": [
+                {
+                  "url": "https://demo.saleor.io/media/products/saleordemoproduct_cl_bogo02_1.png"
+                }
+              ],
+              "id": "UHJvZHVjdDoxMTY=",
+              "name": "Blue Hoodie",
+              "description": "{\"blocks\": [{\"data\": {\"text\": \"Special offer. Buy a superhero blue sweater and get a free hood attached. Ideal for when you are out saving the world.\"}, \"type\": \"paragraph\"}]}"
+            }
+          },
+          {
+            "node": {
+              "media": [
+                {
+                  "url": "https://demo.saleor.io/media/products/saleordemoproduct_fd_juice_05.png"
+                }
+              ],
+              "id": "UHJvZHVjdDo3Mw==",
+              "name": "Carrot Juice",
+              "description": "{\"blocks\": [{\"data\": {\"text\": \"Improve your eyesight the natural way with 100% pure, squeezed carrot juice. The sweet, orange nectar of Mother Earth.\"}, \"type\": \"paragraph\"}]}"
+            }
+          },
+          {
+            "node": {
+              "media": [
+                {
+                  "url": "https://demo.saleor.io/media/products/saleordemoproduct_fd_juice_02.png"
+                }
+              ],
+              "id": "UHJvZHVjdDo3Ng==",
+              "name": "Coconut Juice",
+              "description": "{\"blocks\": [{\"data\": {\"text\": \"Did you know falling coconuts kill 150 people a year? But did you know that coconut juice is the new superfood? You win some, you lose some.\"}, \"type\": \"paragraph\"}]}"
+            }
+          },
+          {
+            "node": {
+              "media": [
+                {
+                  "url": "https://demo.saleor.io/media/products/saleordemoproduct_cl_boot07_1.png"
+                },
+                {
+                  "url": "https://demo.saleor.io/media/products/saleordemoproduct_cl_boot07_2.png"
+                }
+              ],
+              "id": "UHJvZHVjdDo4OQ==",
+              "name": "Code Division T-shirt",
+              "description": "{\"blocks\": [{\"data\": {\"text\": \"Pay homage to the music and art of a Joy Division and Peter Saville, but with a Mirumee twist. Perfect live transmission apparel for dead souls.\"}, \"type\": \"paragraph\"}]}"
+            }
+          },
+          {
+            "node": {
+              "media": [
+                {
+                  "url": "https://demo.saleor.io/media/products/saleordemoproduct_cuschion01.png"
+                }
+              ],
+              "id": "UHJvZHVjdDo4NQ==",
+              "name": "Colored Parrot Cushion",
+              "description": "{\"blocks\": [{\"data\": {\"text\": \"Add a little color to your life with a Saleor parrot cushion. Turns any old sofa into a rainbow of classy interior design.\"}, \"type\": \"paragraph\"}]}"
+            }
+          },
+          {
+            "node": {
+              "media": [
+                {
+                  "url": "https://demo.saleor.io/media/products/saleordemoproduct_fd_juice_04.png"
+                }
+              ],
+              "id": "UHJvZHVjdDo3OA==",
+              "name": "Green Juice",
+              "description": "{\"blocks\": [{\"data\": {\"text\": \"Brussel sprouts, spinach, peas, kale, lettuce, cabbage, zucchini, more brussel sprouts. All the greens you\\u2019ll ever need in one delicious juice.\"}, \"type\": \"paragraph\"}]}"
+            }
+          }
+        ]
+      }
+    }
+  }
