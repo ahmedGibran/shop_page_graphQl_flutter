@@ -10,6 +10,7 @@ class ProductRemoteData{
     final HttpLink httpLink = HttpLink(
       'https://demo.saleor.io/graphql/',
     );
+
     GraphQLClient client = GraphQLClient(
       cache: GraphQLCache(
           store: InMemoryStore()),

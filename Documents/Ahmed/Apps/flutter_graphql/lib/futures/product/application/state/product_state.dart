@@ -27,7 +27,7 @@ class ProductState extends ChangeNotifier{
      notifyListeners();
 
     final result = await  getProducts.getProduct();
-    result.fold((l){
+    result?.fold((l){
       _error = true;
       _loading = false;
 
