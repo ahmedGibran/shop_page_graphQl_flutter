@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_graphql/core/dependencies_injection.dart';
 import 'package:flutter_graphql/futures/product/application/state/product_state.dart';
 import 'package:flutter_graphql/futures/product/presentatoin/screen/products_list_screen.dart';
-import 'package:graphql_flutter/graphql_flutter.dart';
 import 'package:provider/provider.dart';
-void main() {
-
-
-
+void main(){
+   init();
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
@@ -16,13 +14,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(providers: [
-      ChangeNotifierProvider(create: (_)=>ProductState())
+    ChangeNotifierProvider(
+    create: (context) => sl<ProductState>(),),
     ],
     child: MaterialApp(
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:  ProductsListScreen(),
+      home:  const ProductsListScreen(),
     ),
     );
   }

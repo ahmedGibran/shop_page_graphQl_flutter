@@ -7,7 +7,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import '../../../../fixture/fixture_reader.dart';
-import 'get_products.mocks.dart';
+import 'get_products_test.mocks.dart';
 
 @GenerateMocks([ProductRepository])
 void main(){

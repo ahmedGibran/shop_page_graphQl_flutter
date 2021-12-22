@@ -40,6 +40,8 @@ dependencies:
   get_it: ^7.2.0
   mockito: ^5.0.17
   build_runner: ^2.1.7
+  equatable: ^2.0.3
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
