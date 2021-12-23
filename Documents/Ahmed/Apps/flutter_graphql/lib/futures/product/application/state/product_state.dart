@@ -1,16 +1,12 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter_graphql/futures/product/domain/domain.dart';
-import 'package:flutter_graphql/futures/product/infrastrucure/datasource/product_remote_data.dart';
-import 'package:flutter_graphql/futures/product/infrastrucure/repository/products_repository_impl.dart';
 
 class ProductState extends ChangeNotifier{
 
    late List<Product> _product ;
    late bool _error, _loading;
-   GetProducts getProducts = GetProducts(
-     productRepository: ProductRepositoryImpl(productRemoteData: ProductRemoteData())
-   );
-   ProductState(){
+   final GetProducts getProducts ;
+   ProductState({required this.getProducts}){
      _product = [];
      _error = false;
      _loading = false;
