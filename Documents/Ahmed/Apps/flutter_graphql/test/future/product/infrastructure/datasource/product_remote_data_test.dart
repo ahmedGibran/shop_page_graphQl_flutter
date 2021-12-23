@@ -20,16 +20,17 @@ mockGraphQLClient = MockGraphQLClient();
 productRemoteDataImpl = ProductRemoteDataImpl(client:mockGraphQLClient );
 });
 
-group("remote data", ()async{
+group("remote data", (){
   final dataFixture = json.decode(fixture("products.json"));
     List<Product> products = [];
     for(var item in dataFixture["data"]['products']['edges']){
     products.add(ProductModel.fromJson(item['node']));
     }
-test('should response products when  the http reqeust is successfully', () async{
-  when(productRemoteDataImpl.getProduct()).thenAnswer((_) async=> products);
-  final result = await productRemoteDataImpl.getProduct();
-  expect(result, products);
+test('should call query and return data when  the http reqeust is successfully', () async{
+
+    when(mockGraphQLClient.query(any)).thenAnswer((_) async=> QueryResult(data:dataFixture['data'],source: null));
+      await productRemoteDataImpl.getProduct();
+      verify(mockGraphQLClient.query(any));
 });
 });
 }
