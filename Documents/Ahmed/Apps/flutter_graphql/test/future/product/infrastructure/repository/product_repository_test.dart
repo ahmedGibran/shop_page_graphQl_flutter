@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:dartz/dartz.dart';
 import 'package:flutter_graphql/core/errors/failure.dart';
+import 'package:flutter_graphql/core/exception.dart';
 import 'package:flutter_graphql/core/network/network_info.dart';
 import 'package:flutter_graphql/futures/product/domain/domain.dart';
 import 'package:flutter_graphql/futures/product/infrastrucure/datasource/product_remote_data.dart';
@@ -37,14 +38,15 @@ group("product repostiry", (){
   });
 
 
-  // test('Should be throw Failuer data when there are no neternet connectection', () async{
+  test('Should be Failure when there are no neternet connectection', () async{
   
-  //  when(mockNetWorkInfo.isConnected).thenAnswer((_) async=> true);
-  //     when(productRepositoryImpl.getProducts()).thenAnswer((_) async=> Left(Failure()));
+   when(mockNetWorkInfo.isConnected).thenAnswer((_) => Future.value(false));
+      when(mockProductRemoteData.getProduct()).thenThrow((_) => ServerException());
 
-  //   final result = await  productRepositoryImpl.getProducts();
-  //   expect(result,Left(Failure()));
-  // });
+   final result = await  productRepositoryImpl.getProducts();
+   expect(result!.isLeft(), true);
+
+  });
 });
   
 }

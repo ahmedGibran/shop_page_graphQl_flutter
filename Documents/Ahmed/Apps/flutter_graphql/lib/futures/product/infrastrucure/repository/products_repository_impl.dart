@@ -11,17 +11,17 @@ class ProductRepositoryImpl implements ProductRepository{
   ProductRepositoryImpl({required this.productRemoteData,required this.netWorkInfo});
 
   @override
-  Future<Either<Failure,List<Product>>>? getProducts() async{
+  Future<Either<Failure,List<Product>>> getProducts() async{
     final isConnected = await netWorkInfo.isConnected;
     if(isConnected){
     try{
       List<Product> products  = await productRemoteData.getProduct();
         return  Right(products);
       }on ServerException{
-      return Left(Failure());
+      return Left(ServerFailure());
     }
    } else{
-    return Left(Failure());
+    return Left(ServerFailure());
     }
   
   }

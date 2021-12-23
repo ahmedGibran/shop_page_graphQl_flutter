@@ -28,7 +28,7 @@ group("remote data", (){
     }
 test('should call query and return data when  the http reqeust is successfully', () async{
 
-    when(mockGraphQLClient.query(any)).thenAnswer((_) async=> QueryResult(data:dataFixture['data'],source: null));
+    when(mockGraphQLClient.query(any)).thenAnswer((_) async=> QueryResult(data:dataFixture['data'],source: QueryResultSource.network));
       await productRemoteDataImpl.getProduct();
       verify(mockGraphQLClient.query(any));
 });
